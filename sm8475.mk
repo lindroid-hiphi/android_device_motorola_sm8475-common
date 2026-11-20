@@ -417,3 +417,7 @@ PRODUCT_COPY_FILES += \
 
 # Inherit from vendor blobs
 $(call inherit-product, vendor/motorola/sm8475-common/sm8475-common-vendor.mk)
+
+# V4L2 loopback module parameters for Lindroid/Waydroid cameras
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/modules.options:$(TARGET_COPY_OUT_VENDOR_DLKM)/lib/modules/modules.options
